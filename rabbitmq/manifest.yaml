@@ -26,14 +26,14 @@ spec:
       tier: db
       component: rabbitmq
      # pod definition 
-    template: 
-      metadata:
-        labels :
-          project: roboshop
-          tier: db
-          component: rabbitmq
-      spec:
-        containers:
+  template: 
+    metadata:
+      labels :
+        project: roboshop
+        tier: db
+        component: rabbitmq
+    spec:
+      containers:
         - name: rabbitmq  
           image: rabbitmq:3
           envFrom:
