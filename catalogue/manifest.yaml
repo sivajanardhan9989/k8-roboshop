@@ -25,13 +25,13 @@ spec:
       tier: backend
       component: catalogue
    # pod definition   
-    template:
-      metadata:
-        labels:
-          project: roboshop
-          tier: backend
-          component: catalogue
-      spec:
+  template:
+    metadata:
+      labels:
+        project: roboshop
+        tier: backend
+        component: catalogue
+    spec:
         containers:
         - name : catalogue
           image: sivajanardhan/catalogue:5.0.0.0  
